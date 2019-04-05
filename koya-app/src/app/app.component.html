@@ -1,6 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand">Koya</a>
+
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="[ '/' ]">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="[ '/properties' ]">For-Rent</a>
+    </li>
+  </ul>
+
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search"
       aria-label="Search">

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EstateCardComponent } from './estate-card/estate-card.component';
+import { EstateListComponent } from './estate-list/estate-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    EstateCardComponent
+    EstateCardComponent,
+    EstateListComponent
   ],
   imports: [
     BrowserModule,
