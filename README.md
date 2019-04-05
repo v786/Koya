@@ -1,2 +1,2 @@
 # Koya
-A house for rent Listing App
+An app that gets you a home you desire
