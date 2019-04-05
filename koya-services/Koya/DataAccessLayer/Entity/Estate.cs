@@ -52,14 +52,14 @@ namespace DataAccessLayer.Entity
         }
 
         [BsonElement("rating")]
-        public int _rating
+        public float _rating
         {
             get;
             set;
         }
 
         [BsonElement("amenities")]
-        public int _amenities
+        public String _amenities
         {
             get;
             set;

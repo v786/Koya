@@ -1,0 +1,14 @@
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\ConsoleOutput.deps.json
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\ConsoleOutput.runtimeconfig.json
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\ConsoleOutput.runtimeconfig.dev.json
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\ConsoleOutput.dll
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\ConsoleOutput.pdb
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.csprojAssemblyReference.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.csproj.CoreCompileInputs.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.AssemblyInfoInputs.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.AssemblyInfo.cs
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.csproj.CopyComplete
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.dll
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\ConsoleOutput\obj\Debug\netcoreapp2.2\ConsoleOutput.pdb

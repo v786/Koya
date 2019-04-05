@@ -25,8 +25,10 @@ namespace DataAccessLayer.Dao
             {
                 estates = estateCollection.AsQueryable<Estate>().ToList();
             }
-            catch (Exception) {
+            catch (Exception e) {
                 estates = new List<Estate>();
+                Console.WriteLine("error occured!");
+                Console.WriteLine(e.Message);
             }
             return estates;
         }
