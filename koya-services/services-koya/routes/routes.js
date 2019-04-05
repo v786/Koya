@@ -14,17 +14,21 @@ router.get('/fetchrecords', function (req, res) {
   var num = parseInt(req.query.number);
   dbcon.getThings(num, res);
 });
-router.get('/home', function (req, res) {
-  res.set('Content-Type', 'text/plain');
-  res.send('Welcome');
-});
-router.get('/register', function (req, res) {
-  console.log('request for file');
-  res.sendFile(path.join(__dirname + '/../login.html'));
-});
 router.get('/about', function (req, res) {
-  console.log('Request for about us page');
-  res.send('About Us page');
+    res.set('Content-Type', 'text/plain');
+    res.send('Jahangir and Munish');
 });
+router.post('/login', function (req, res) {
+    console.log('Request for log in!');
+    dbcon.login(req,res);
+});
+router.get('/users', function (req, res) {
+    var num = parseInt(req.query.number);
+    dbcon.getUsers(num,res)
+});
+router.post('/price', function (req, res) {
+    // var num = parseInt(req.query.number);
+    dbcon.sortByPrice(req,res)
+})
 
 module.exports = router;
