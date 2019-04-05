@@ -1,0 +1,6 @@
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.deps.json
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.dll
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Munish Sharma\Desktop\Koya\koya-services\Koya\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.AssemblyInfo.cs
