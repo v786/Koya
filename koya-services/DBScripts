@@ -1,1 +1,3 @@
 #Paste Db commands here
+{"_id":"5ca75e6037f7691180d9f3db","bedroom":"2","bathroom":"2","area":"1500","cost":"8000","advance":"20000","rating":"4.5","amenities":"fridge, table, fan, lights, stove, balcony","isBooked":"0"}
+{"bedroom":"3","bathroom":"1","area":"1800","cost":"10000","advance":"25000","rating":"3.9","amenities":"fan, lights, stove, balcony","isBooked":"0","_id":"5ca75f9f2acbb41180c16a8a"}
