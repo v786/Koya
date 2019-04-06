@@ -9,7 +9,7 @@ const scraper = function (url, res) {
     .then(function (html) {
       //success!
       console.log($('.rli-price', html).text());
-      res.send($('.rli-price', html).text());
+      res.send($('.rli-price', html).text() + $('.rli-info', html).text() + $('.rli-address', html).text());
     })
     .catch(function (err) {
       //handle error
