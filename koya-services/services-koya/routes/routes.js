@@ -38,4 +38,5 @@ router.post('/pricebyarea', function(req, res){
     dbcon.fetchPriceByArea(req, res);
 })
 
+
 module.exports = router;
