@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Route, ActivatedRoute } from '@angular/router';
+
+import { EstateService } from '../estate.service';
 
 @Component({
   selector: 'app-estate-list',
@@ -7,21 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstateListComponent implements OnInit {
 
-  estate: any;
+  estates: any;
+  searchArg: string;
 
-  constructor() {
-    this.estate = {
-      "bedroom": "3",
-      "bathroom": "1",
-      "area": "1800",
-      "cost": "10000",
-      "advance": "25000",
-      "rating": "3.9",
-      "amenities": "fan, lights, stove, balcony",
-      "isBooked": "0",
-      "_id": "5ca75f9f2acbb41180c16a8a"
-    };
+  constructor(private route: ActivatedRoute, private _service: EstateService) {
+
+    this.searchArg = this.route.snapshot.paramMap.get('arg1');
+
+    this.estates = this._service.getAllEstates();
+
+    console.log(this.estates);
   }
+
 
   ngOnInit() {
   }

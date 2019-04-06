@@ -13,15 +13,18 @@
 <div class="row m-2 bg-dark">
   <div class="input-group mb-3 p-4"
     style="background-color: rgb(236, 225, 203);">
-    <input type="text" class="form-control" placeholder="Recipient's username"
-      aria-label="Recipient's username"
+    <input #inputBox type="text" class="form-control"
+      placeholder="Rent Per Month"
       aria-describedby="button-addon2">
     <div class="input-group-append">
       <button class="btn btn-outline-secondary"
         type="button"
         style="background-color: rgb(236, 225, 203) ;
         color: rgb(84, 114, 60);"
-        id="button-addon2">Search</button>
+        id="button-addon2"
+        (click)="search(inputBox.value)">
+        Search
+      </button>
     </div>
   </div>
 </div>

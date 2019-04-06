@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   estate: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.estate = {
       "bedroom": "3",
       "bathroom": "1",
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  search(arg1) {
+    this.router.navigate(['/properties/' + arg1]);
   }
 
 }
