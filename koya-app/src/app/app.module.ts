@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EstateCardComponent } from './estate-card/estate-card.component';
 import { EstateListComponent } from './estate-list/estate-list.component';
+import { CompareRentComponent } from './compare-rent/compare-rent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     EstateCardComponent,
-    EstateListComponent
+    EstateListComponent,
+    CompareRentComponent
   ],
   imports: [
     BrowserModule,
