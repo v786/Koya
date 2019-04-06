@@ -20,8 +20,12 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+<<<<<<< HEAD
     "chart.js": "^2.8.0",
     "cheerio": "^1.0.0-rc.2",
+=======
+    "angular-chart.js": "^1.1.1",
+>>>>>>> 2e56cfe76434008d6375bd0099cf71acc6789a1c
     "core-js": "^2.5.4",
     "ng2-charts": "^2.2.2",
     "puppeteer": "^1.14.0",
