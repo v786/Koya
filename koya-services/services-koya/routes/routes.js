@@ -30,5 +30,12 @@ router.post('/price', function (req, res) {
     // var num = parseInt(req.query.number);
     dbcon.sortByPrice(req,res)
 })
+router.get('/getarea', function (req, res) {
+    var num = parseInt(req.query.number);
+    dbcon.getAreas(num,res)
+});
+router.post('/pricebyarea', function(req, res){
+    dbcon.fetchPriceByArea(req, res);
+})
 
 module.exports = router;

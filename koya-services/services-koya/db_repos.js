@@ -67,6 +67,20 @@ exports.sortByPrice = function(data, response){
     })
 }
 
-// exports.sortByPrice = function(data1, data2, response){
+exports.getAreas = function(limnum, response){
+    db.Houses.find().limit(limnum, function(err, docs){
+        response.json(docs)
+    })
+}
 
-// }
+exports.fetchPriceByArea = function(data, response){
+    db.Houses.find({Locality: data.body.locality}, function(err, docs){
+        console.log(docs)
+        if(docs){
+            response.json(docs)
+        }
+        else{
+            response.json("sorry")
+        }
+    });
+}
