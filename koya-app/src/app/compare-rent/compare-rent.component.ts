@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Chart, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-compare-rent',
