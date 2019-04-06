@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, Route, ActivatedRoute } from '@angular/router';
+import { potusScraper } from '../potusScraper';
 
 import { EstateService } from '../estate.service';
 
@@ -22,8 +23,14 @@ export class EstateListComponent implements OnInit {
     console.log(this.estates);
   }
 
+  url: 'https://housing.com/rent/flats-for-rent-in-vijayanagar-mysore-P2hnfd8x2cuvh2kt4?f=eyJiYXNlIjpbeyJ0eXBlIjoiUE9MWSIsInV1aWQiOiI4YjFmYjNlNzE5NTU0OTY0YWYyNSIsImxhYmVsIjoiTXlzb3JlIENvbG9ueSJ9XSwibm9uQmFzZUNvdW50IjowLCJleHBlY3RlZFF1ZXJ5IjoibXlzb3JlIiwicXVlcnkiOiIgTXlzb3JlIENvbG9ueSwgQ2hlbWJ1ciIsInYiOjIsInMiOiJkIn0%3D&locality_info=false';
+
 
   ngOnInit() {
+  }
+
+  getC(val) {
+
   }
 
 }
