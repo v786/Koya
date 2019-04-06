@@ -44,3 +44,31 @@ json document -
     }
 ]
 sorry - no record found
+
+http://localhost:3000/getarea  ----get
+
+[{"_id":"5ca7e5c5fdbfa311d857c11c","Locality":"Bannimantap","Min":"4211","max":"5614","AvgPrice":"4912"},
+{"_id":"5ca7e639f271a611d88312ae","Locality":"Bogadi","Min":"2042","max":"3500","AvgPrice":"2771"},
+{"_id":"5ca7e664f271a611d88312af","Locality":"Gokulam","Min":"5093","max":"5648","AvgPrice":"5370"},
+{"_id":"5ca7e6a2f271a611d88312b0","Locality":"Hunsur","Min":"3964","max":"4099","AvgPrice":"4031"},
+{"_id":"5ca7e6c3f271a611d88312b1","Locality":"JP Nagar","Min":"2815","max":"3542","AvgPrice":"3178"},
+{"_id":"5ca7e6eff271a611d88312b2","Locality":"Kuvempunagar","Min":"4875","max":"5458","AvgPrice":"5166"},
+{"_id":"5ca7e71df271a611d88312b3","Locality":"Mysore City","Min":"3750","max":"6042","AvgPrice":"4896"},
+{"_id":"5ca7e73df271a611d88312b4","Locality":"Mysore Suburban","Min":"2083","max":"2083","AvgPrice":"2083"},
+{"_id":"5ca7e777f271a611d88312b5","Locality":"Roopa Nagar","Min":"5000","max":"6000","AvgPrice":"5500"}]
+
+http://localhost:3000/pricebyarea ----post
+input- {"locality":"Bannimantap"}
+
+[
+    {
+        "_id": "5ca7e5c5fdbfa311d857c11c",
+        "Locality": "Bannimantap",
+        "Min": "4211",
+        "max": "5614",
+        "AvgPrice": "4912"
+    }
+]
+
+sorry - no result found
+
