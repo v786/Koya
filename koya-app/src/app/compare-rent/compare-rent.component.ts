@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ChartOptions } from 'chart.js';
 import { ChartsModule } from 'ng2-charts';
+import {ScrapperService} from  '../scrapper.service';
 
 @Component({
   selector: 'app-compare-rent',
@@ -35,13 +36,13 @@ export class CompareRentComponent implements OnInit {
   public barChartLabels: Label[] = ['Min', 'Max', 'AvgPrice'];
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
-
+  public price: string;
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
-  constructor() {
+  constructor(private _scrapper : ScrapperService) {
     const temp = [];
     this.data.forEach(function (elem) {
       temp.push({
@@ -55,6 +56,20 @@ export class CompareRentComponent implements OnInit {
       console.log(temp);
     });
     this.barChartData = temp;
+  }
+
+  getScrapper(){
+    this._scrapper.getScraps('gokulam').subscribe(
+      responsePriceData => {
+        this.price = responsePriceData;
+        console.log("success")
+      },
+      responsePriceError => {
+        this.price = null;
+        console.log("fail")
+      },
+      () => console.log("get scraps method executed")
+    )
   }
 
   ngOnInit() {
