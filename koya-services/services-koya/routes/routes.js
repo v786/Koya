@@ -17,6 +17,16 @@ router.get('/fetchrecords', function (req, res) {
     dbcon.getThings(num, res);
 });
 router.get('/cost-list', function (req, res) {
+    //const area = req.query.area;
+    const url = 'https://housing.com/rent/flats-for-rent-in-mysore-karnataka-P73itnd4i57h4o32k';
+    obj = scrapper(url, res);
+});
+router.get('/info-list', function (req, res) {
+    const area = req.query.area;
+    const url = 'https://housing.com/rent/flats-for-rent-in-mysore-karnataka-P73itnd4i57h4o32k';
+    obj = scrapper(url, res);
+});
+router.get('/address-list', function (req, res) {
     const area = req.query.area;
     const url = 'https://housing.com/rent/flats-for-rent-in-mysore-karnataka-P73itnd4i57h4o32k';
     obj = scrapper(url, res);
