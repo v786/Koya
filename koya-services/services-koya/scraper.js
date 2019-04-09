@@ -8,15 +8,19 @@ const scraperPrice = function (url, res) {
   rp(url)
     .then(function (html) {
       //success!
-      const data = $('.rli-price', html);
-      const count = data.length;
-      console.log(data.text(), count);
-      console.log(data[0].children[1].data);
+      let data = $('.rli-price', html);
       const priceData = [];
-      const x = data.each(function (i, elem) {
+      data.each(function (i, elem) {
         priceData[i] = $(this).text();
       });
-      console.log(x);
+      data = $('.rli-info', html);
+      data.each(function (i, elem) {
+        priceData[i] += ' : ' + $(this).text();
+      });
+      data = $('.rli-address', html);
+      data.each(function (i, elem) {
+        priceData[i] += ' : ' + $(this).text();
+      });
       res.send(priceData);
     })
     .catch(function (err) {
