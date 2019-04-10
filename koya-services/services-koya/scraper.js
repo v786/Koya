@@ -11,15 +11,21 @@ const scraperPrice = function (url, res) {
       let data = $('.rli-price', html);
       const priceData = [];
       data.each(function (i, elem) {
-        priceData[i] = $(this).text();
+        var price = $(this).text();
+        var obj = {
+          price: price,
+          info: '',
+          address: ''
+        }
+        priceData[i] = obj;
       });
       data = $('.rli-info', html);
       data.each(function (i, elem) {
-        priceData[i] += ' : ' + $(this).text();
+        priceData[i].info = $(this).text();
       });
       data = $('.rli-address', html);
       data.each(function (i, elem) {
-        priceData[i] += ' : ' + $(this).text();
+        priceData[i].address = $(this).text();
       });
       res.send(priceData);
     })
