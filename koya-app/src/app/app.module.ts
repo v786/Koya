@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { EstateCardComponent } from './estate-card/estate-card.component';
 import { EstateListComponent } from './estate-list/estate-list.component';
 import { CompareRentComponent } from './compare-rent/compare-rent.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CompareRentComponent } from './compare-rent/compare-rent.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

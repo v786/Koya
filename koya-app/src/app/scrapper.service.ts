@@ -16,8 +16,8 @@ export class ScrapperService {
   constructor(private _httpCli: HttpClient) {
 
   }
-  getScraps(area: string): Observable<string> {
-    return this._httpCli.get<string>('http://localhost:3000/cost-list').pipe(catchError(this.errorHandler));
+  getScraps(area: string): Observable<any> {
+    return this._httpCli.get<any>('http://localhost:3000/cost-list').pipe(catchError(this.errorHandler));
   }
 
 }

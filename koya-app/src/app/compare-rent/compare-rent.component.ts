@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart, ChartOptions } from 'chart.js';
-import { ChartsModule } from 'ng2-charts';
-import {ScrapperService} from  '../scrapper.service';
+import { Chart, ChartOptions, ChartType, ChartDataSets } from 'chart.js';
+import { ChartsModule, Label } from 'ng2-charts';
+import { ScrapperService } from '../scrapper.service';
 
 @Component({
   selector: 'app-compare-rent',
@@ -36,13 +36,14 @@ export class CompareRentComponent implements OnInit {
   public barChartLabels: Label[] = ['Min', 'Max', 'AvgPrice'];
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
-  public price: string;
+  public estates: any[];
+
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
-  constructor(private _scrapper : ScrapperService) {
+  constructor(private _scrapper: ScrapperService) {
     const temp = [];
     this.data.forEach(function (elem) {
       temp.push({
@@ -58,21 +59,22 @@ export class CompareRentComponent implements OnInit {
     this.barChartData = temp;
   }
 
-  getScrapper(){
+  getScrapper() {
     this._scrapper.getScraps('gokulam').subscribe(
       responsePriceData => {
-        this.price = responsePriceData;
-        console.log("success")
+        this.estates = responsePriceData;
+        console.log('success', this.estates);
       },
       responsePriceError => {
-        this.price = null;
-        console.log("fail")
+        this.estates = null;
+        console.log('fail')
       },
-      () => console.log("get scraps method executed")
-    )
+      () => console.log('get scraps method executed')
+    );
   }
 
   ngOnInit() {
+    this.getScrapper();
   }
 
 }
